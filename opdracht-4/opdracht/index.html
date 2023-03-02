@@ -6,29 +6,83 @@
     <title>Opdracht 4</title>
 
     <style>
+      *{
+        margin: 0px;
+      }
+    
+
       .bovenaan {
+        
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         background-color: goldenrod;
-        margin-bottom: 10px;
-        width: 100%;
+        
+        width: 100vw;
         height: 50px;
       }
 
       .onderaan {
+       
+        
+        position: fixed;
+        margin-left:85%;
+        margin-top: 7%;
+        width: 200px;
         background-color: dodgerblue;
       }
+
+
+  
 
       .blogpost {
         border: 1px solid red;
         margin: 10px;
-        width: 300px;
+        width: 250px;
+
+        display: flex;
+        flex-direction: column;
+        
+        
       }
 
       .blogposts {
+        
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      @media screen and (max-width: 1000px){
+
+          .bovenaan{
+            width: 100vw;
+          }
+
+          .onderaan{
+            position: fixed;
+              margin-left:85%;
+        margin-top: 7%;
+        width: 200px;
+        background-color: dodgerblue;
+          }
+
+      .blogpost
+        {
+          
+          flex: column;
+          
+        }
       }
 
       .container {
-        margin-top: 50px;
+        
+       margin-bottom: 50px;
       }
+
+
+
     </style>
   </head>
   <body>
@@ -39,6 +93,7 @@
 
     <div class="container">
       <h1>Blog</h1>
+
 
       <div class="blogposts">
         <div id="html" class="blogpost">
